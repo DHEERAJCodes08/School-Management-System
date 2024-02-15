@@ -1,0 +1,17 @@
+{
+  "name": "data-managemt-system",
+  "version": "1.0.0",
+  "description": "<!-- So basically we are Creating an Web Application Where we will Be Using System Designed for the Management of the Data  -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apexcharts": "^3.45.2",
+    "datatables.net-dt": "^1.13.10",
+    "nodemon": "^3.0.3"
+  }
+}

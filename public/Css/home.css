@@ -1,0 +1,407 @@
+/* This are the Font Styles  */
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 0.7fr 3fr;
+  column-gap: 0px;
+  row-gap: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+/* Start left panel */
+.left-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  overflow: scroll;
+  background-color: #010229;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Style for the content area */
+.Right_Pannel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(238, 243, 250);
+  flex-flow: column;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  overflow: scroll;
+}
+
+.accordion {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+
+/* Start Left Sidebar Accordian */
+.accordion-button,
+.accordion-header,
+.accordion-item {
+  border: none;
+  background-color: #010229e4;
+  outline: none;
+  color: rgba(255, 255, 255, 0.414);
+}
+
+.dashboard_list_items:hover {
+  color: #fff;
+}
+
+.accordion-body {
+  max-height: 400px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+/* End Left Sidebar Accordian */
+
+/* Start Logo */
+
+.sidebar_logo {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* End Logo */
+
+/* Start dashboard list */
+.dashboard_items {
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+/* End dashboard list */
+
+.Logout_btn {
+  border: 1px solid White;
+  line-height: 35px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  color: #010229;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Logout_btn:hover {
+  background-color: #010229;
+  color: #f0f0f0;
+  transition: 0.5s;
+}
+
+/* END left panel */
+
+/* Start of the Right Side  */
+
+/* This is the Styling of Data Entry Form */
+#DataEntry {
+  border-radius: 10px;
+  align-items: center;
+  flex-flow: column;
+  padding: 35px;
+  width: 700px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(72, 0, 255));
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+#DataEntry:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgb(41, 32, 62);
+}
+#DataEntry form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 40px;
+}
+
+#item:not(:last-child) {
+  width: 100%;
+}
+
+#item1 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+.male,
+.female {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.gender {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 30px;
+  align-items: center;
+  font-size: 1rem;
+}
+.stud_class {
+  font-size: 1rem;
+}
+
+#item input,
+select {
+  margin-top: 30px;
+  width: 100%;
+  line-height: 35px;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  align-items: flex-start;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  letter-spacing: 1.2px;
+}
+
+#item input:active,
+#item input:focus {
+  border: 2px solid rgb(0, 213, 255);
+}
+
+#item button {
+  background-color: rgb(72, 0, 255);
+  padding: 10px 25px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#item button:hover {
+  /* here it means the button which is contaning the Active class will be using this Property */
+  color: rgb(2, 5, 47);
+  background-color: #1aff05cf;
+}
+
+.Content {
+  display: none;
+}
+
+.Content.active {
+  /* the Cuntent with the Active Tag only will be Displayed  */
+  display: block;
+}
+
+.btn_active {
+  color: white;
+}
+
+/* Data Search Styling */
+
+#DataSearch {
+  border-radius: 10px;
+  align-items: center;
+  flex-flow: column;
+  padding: 35px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+}
+
+/* End of the Right Side  */
+
+.filterOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 30px;
+  line-height: 50px;
+  background-color: rgb(0, 145, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.selectionOptions {
+  width: 250px;
+  margin: 0;
+}
+
+.InnerNav {
+  z-index: 100;
+  color: white;
+  padding: 5px 20px;
+  width: 100%;
+  background-color: #010229;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.InnerNav ul {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.place {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.generate_summary {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(0, 145, 255);
+  display: flex;
+  align-items: center;
+ cursor: pointer;
+  font-size: 1rem;
+}
+.generate_summary img:hover{
+  color:rgb(0, 145, 255) ;
+}
+
+.genrate {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.tooltip_message{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.915);
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.929);
+  border-radius: 10px;
+  font-size: 0.7rem;
+  display: none;
+}
+
+
+
+
+
+.tooltip_view{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.tooltip_view:hover .tooltip_message{
+  display: block;
+  transition: 0.3s;
+  opacity: 0.8;
+
+}
+
+
+
+/* Chart */
+
+#chart,
+#chart2 {
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+.default {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.section1_header {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.section1_chart {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.main_dashboard_section {
+  width: 500px;
+}
